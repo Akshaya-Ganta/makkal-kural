@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito Sans", "Trebuchet MS", sans-serif;
+  --font-heading: "Lora", "Georgia", serif;
+
+  --color-soil-50: #f5f0e7;
+  --color-soil-100: #ece4d4;
+  --color-soil-200: #ddd0b8;
+  --color-soil-300: #c8b79c;
+  --color-earth-700: #63503f;
+  --color-earth-800: #4c3f32;
+  --color-earth-900: #352c23;
+
+  --color-leaf-100: #d8e2cc;
+  --color-leaf-200: #c3d2b3;
+  --color-leaf-600: #64755d;
+
+  --color-clay-100: #f2dfcf;
+  --color-clay-200: #e7cdb6;
+  --color-clay-500: #b7825b;
+
+  --color-surface: #fffcf6;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply bg-soil-50 text-earth-900 font-sans antialiased overflow-x-hidden;
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(195, 210, 179, 0.25), transparent 38%),
+      radial-gradient(circle at 85% 15%, rgba(231, 205, 182, 0.24), transparent 32%),
+      linear-gradient(180deg, #f5f0e7 0%, #f9f4ea 100%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight text-earth-900;
+  }
+}

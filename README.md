@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+#  Makkal Kural
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Makkal Kural* (மக்கள் KURAL) is an interactive election awareness platform designed to educate and guide first-time voters through a simple, story-driven experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Features
 
-## React Compiler
+- Story-based onboarding inspired by rural narratives  
+-  Interactive EVM simulation to understand voting  
+-  Voter checklist for real-world readiness  
+-  Multi-language support (English, Tamil, Hindi, Telugu)  
+-  Gamified experience with badges and progress tracking  
+-  Personalized voter information  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##  Prompt Engineering Approach
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project was developed using iterative prompt-based design and development.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Prompts were used to:
+- Design UI components and layouts  
+- Structure interactive modules (EVM simulation, checklist)  
+- Implement navigation and state management  
+- Refine animations and user experience  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+No external AI APIs were used. Prompts were used during development to guide implementation and design decisions.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- React  
+- Tailwind CSS  
+- Framer Motion  
+- Vite  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+##  Live Demo
+
+https://makkal-kural.vercel.app
+
+---
+
+##  GitHub Repository
+
+https://github.com/Akshaya-Ganta/makkal-kural
+
+---
+
+##  Objective
+
+To make civic participation simple, engaging, and accessible — especially for young and first-time voters.
+
+---
+
+## 📌 Note
+
+This project is built for educational and awareness purposes.
